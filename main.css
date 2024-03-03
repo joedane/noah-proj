@@ -1,0 +1,26 @@
+div#item-list {
+    width: 300px;
+    height: 300px;
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid red;
+}
+
+ul {
+    list-style-type: none;
+    /* display: none; */
+}
+
+div#item-list li {
+    border: 1px solid green;
+    margin: 2px;
+}
+
+div#item-list li:hover {
+    border: 2px solid red;
+}
+
+.disabled {
+    /* pointer-events: none; */
+    opacity: 0.2;
+}
