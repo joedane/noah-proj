@@ -20,6 +20,10 @@ div#item-list li:hover {
     border: 2px solid red;
 }
 
+.selected {
+    border: 2px solid red;
+}
+
 .disabled {
     /* pointer-events: none; */
     opacity: 0.2;

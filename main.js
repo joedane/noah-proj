@@ -31,6 +31,7 @@ class Play extends Phaser.Scene {
     }
 
     create() {
+        this.selected = []
         const element = this.add.dom(200, 1000).createFromCache("list")
         element.addListener('click');
         let scene = this
@@ -59,6 +60,8 @@ class Play extends Phaser.Scene {
                 } else {
                     console.log("clicked %s", id)
                     console.log("running: %s", item.description)
+                    //selected.push(id)
+                    event.target.className = "selected disabled"
                 }
             }
         })
